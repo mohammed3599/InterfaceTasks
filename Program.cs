@@ -42,8 +42,25 @@
             checkingAccount.Withdraw(100);
             Console.WriteLine("Checking account balance: {0}", checkingAccount.GetBalance());
             Console.WriteLine("------------------------------");
-            
 
+            /*
+            Create an interface IPlayable with the following methods:
+            void Play()
+            void Pause()
+            void Stop()
+            Create two classes MusicPlayer and VideoPlayer that implement the IPlayable interface.
+            Implement the methods to control the playback of music and videos.
+            */
+
+            MusicPlayer musicPlayer = new MusicPlayer();
+            musicPlayer.Play();
+            musicPlayer.Pause();
+            musicPlayer.Stop();
+
+            VideoPlayer videoPlayer = new VideoPlayer();
+            videoPlayer.Play();
+            videoPlayer.Pause();
+            videoPlayer.Stop();
         }
     }
 }
